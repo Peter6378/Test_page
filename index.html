@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Test Page-change password</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+	<div class="center">
+		<form action="obrabotka11.php" method="POST">
+			<input type="hidden" id="login" name="login" value="10gin">
+			<label>New Login</label>
+			<input type="text" required id="newlogin" name="newlogin" size="25" maxlength="25" pattern="^[a-zA-Z]+$"/>
+			<label>Old Password</label>
+			<input type="text" required id="password" name="password" size="25" minlength="9" maxlength="20"/>
+			<label>New Password</label>
+			<input type="text" required id="newpassword" name="newpassword" size="25" minlength="9" maxlength="20"/>
+			<label>Confirm New Password</label>
+			<input type="text" required id="confirmnewpassword" name="confirmnewpassword" size="25" minlength="9" maxlength="20"/>
+			<input type="submit" id="button" value="SEND" />
+		</form>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
